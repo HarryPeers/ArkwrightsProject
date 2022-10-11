@@ -124,6 +124,7 @@ class product:
         else:
             for key in self.item.keys():
                 print(f"    {key}: {self.item[key]}")
+            print(f"    price with VAT: {self.productPrice*1.2}")
             print(f"    id: {self.productId}")
     
     def create(self):        
