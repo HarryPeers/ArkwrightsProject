@@ -119,12 +119,11 @@ class product:
         self.save()
 
     def display(self):
-        if self.item is False:
+        if self.item is False or self.item is None:
             print("This item does not exist!")
         else:
             for key in self.item.keys():
                 print(f"    {key}: {self.item[key]}")
-            print(f"    price with VAT: {self.productPrice*1.2}")
             print(f"    id: {self.productId}")
     
     def create(self):        
